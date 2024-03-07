@@ -1,0 +1,28 @@
+@host = https://localhost
+@port = 7178
+
+@Restaurants.API_HostAddress = https://localhost:7178
+
+
+GET {{Restaurants.API_HostAddress}}/api/restaurants
+
+###
+
+GET {{Restaurants.API_HostAddress}}/api/restaurants/3
+
+###
+
+POST {{Restaurants.API_HostAddress}}/api/restaurants
+Content-Type: application/json
+
+{
+    "Name": "Kebab King",
+    "Description": "A best kebab in the town",
+    "Category": "Polish",
+    "HasDelivery": true,
+    "ContactEmail": "kebab@king.com",
+    "ContactNumber": "123-321-4567",
+    "City": "Olsztyn",
+    "Street": "Najlepsza 1",
+    "PostalCode": "78-910"
+}
