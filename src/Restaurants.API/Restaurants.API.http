@@ -8,7 +8,7 @@ GET {{Restaurants.API_HostAddress}}/api/restaurants
 
 ###
 
-GET {{Restaurants.API_HostAddress}}/api/restaurants/56
+GET {{Restaurants.API_HostAddress}}/api/restaurants/3
 
 ###
 
@@ -26,3 +26,27 @@ Content-Type: application/json
     "Street": "Najlepsza 1",
     "PostalCode": "78-910"
 }
+
+###
+
+POST {{Restaurants.API_HostAddress}}/api/restaurants/1/dishes
+Content-Type: application/json
+
+{
+  "Name": "BBQ ribs",
+  "Description": "In American cuisine, ribs usually refers to barbecue pork ribs, or sometimes beef ribs, which are served with various barbecue sauces.",
+  "Price": 20.99,
+  "KiloCalories": 900
+}
+
+###
+
+GET {{Restaurants.API_HostAddress}}/api/restaurants/3/dishes/3
+
+###
+
+DELETE {{Restaurants.API_HostAddress}}/api/restaurants/1/dishes/
+
+###
+
+GET https://localhost:7178/api/restaurants/1/dishes/4
