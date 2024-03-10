@@ -1,10 +1,12 @@
 @host = https://localhost
 @port = 7178
+@token = CfDJ8DA_vqotUxJFklS7N397sbFV2PxcuI7c6zivSozQ3a5Q_e1pbFIhsJfhLb9nYgHoZprCndjDIbSMbFVcsCbwtvuawq_IEeoxFFueAQ23UQ5r7DwXHHjmy1s_dXJq5AXFw1SltgsJcgo0DiCyNPUbK7pPd
 
 @Restaurants.API_HostAddress = https://localhost:7178
 
 
 GET {{Restaurants.API_HostAddress}}/api/restaurants
+Authorization: Bearer {{token}}
 
 ###
 
@@ -50,3 +52,23 @@ DELETE {{Restaurants.API_HostAddress}}/api/restaurants/1/dishes/
 ###
 
 GET https://localhost:7178/api/restaurants/1/dishes/4
+
+###
+
+POST {{Restaurants.API_HostAddress}}/api/identity/register
+Content-Type: application/json
+
+{
+    "email": "testuser@test.com",
+    "password": "Password1!"
+}
+
+###
+
+POST {{Restaurants.API_HostAddress}}/api/identity/login
+Content-Type: application/json
+
+{
+    "email": "testuser@test.com",
+    "password": "Password1!"
+}
