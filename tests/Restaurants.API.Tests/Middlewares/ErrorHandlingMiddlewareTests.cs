@@ -6,7 +6,7 @@ using Restaurants.API.Middlewares;
 using Restaurants.Domain.Entities;
 using Restaurants.Domain.Exceptions;
 
-namespace Restaurants.API.Tests
+namespace Restaurants.API.Tests.Middlewares
 {
     public class ErrorHandlingMiddlewareTests
     {
