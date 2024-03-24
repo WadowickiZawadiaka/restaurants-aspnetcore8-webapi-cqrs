@@ -1,4 +1,4 @@
-﻿namespace Restaurants.Domain.Authorization
+﻿namespace Restaurants.Domain.Constants
 {
     public enum ResourceOperation
     {

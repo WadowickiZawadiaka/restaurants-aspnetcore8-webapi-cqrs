@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
 using Restaurants.Application.Users;
-using Restaurants.Domain.Authorization;
 using Restaurants.Domain.Constants;
 using Restaurants.Domain.Entities;
 using Restaurants.Domain.Interfaces;

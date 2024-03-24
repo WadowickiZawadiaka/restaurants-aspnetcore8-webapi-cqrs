@@ -1,4 +1,4 @@
-﻿using Restaurants.Domain.Authorization;
+﻿using Restaurants.Domain.Constants;
 using Restaurants.Domain.Entities;
 
 namespace Restaurants.Domain.Interfaces
