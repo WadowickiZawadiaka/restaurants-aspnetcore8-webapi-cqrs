@@ -1,5 +1,4 @@
 ﻿using FluentAssertions;
-using FluentAssertions.Common;
 using Microsoft.AspNetCore.Authorization.Policy;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
